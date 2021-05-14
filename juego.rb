@@ -7,52 +7,49 @@ else
 # numeros aleatoriosS
 computador = rand(3)
 
-if computador == 0 
+    if computador == 0 
     computador="piedra"
-end
+    end
 
-if computador == 1
+    if computador == 1
     computador ="papel"
-end
+    end
 
-if computador == 2
+    if computador == 2
     computador= "tijera"
-end
+    end
 
 # mensaje de computador
-puts "computador juega #{computador}"
+    puts "computador juega #{computador}"
 
 
 
 #  resultado de juego
-if computador == usuario
-    puts "empataste"
-end
+    if computador == usuario
+        puts "empataste"
+    
 
-if computador =="piedra" and usuario =="papel"
-    puts "ganaste"
-end
+    elsif computador =="piedra" and usuario =="papel"
+            puts "ganaste"
 
-if computador =="piedra" and usuario =="tijera"
-    puts "pediste"
-end
+    elsif computador =="piedra" and usuario =="tijera"
+            puts "pediste"
 
-if computador =="papel" and usuario =="tijera"
-    puts "ganaste"
-end
 
-if computador =="papel" and usuario =="piedra"
-    puts "perdiste"
-end
+    elsif computador =="papel" and usuario =="tijera"
+            puts "ganaste"
 
-if computador =="tijera" and usuario =="piedra"
-    puts "ganaste"
-end
+    elsif computador =="papel" and usuario =="piedra"
+            puts "perdiste"
 
-if computador =="tijera" and usuario =="papel"
-    puts "perdiste"
-end
-
+    elsif computador =="tijera" and usuario =="piedra"
+            puts "ganaste"
+            
+    else 
+        computador =="tijera" and usuario =="papel"
+            puts "perdiste"
+    
+    end
 end
 
 
