@@ -1,11 +1,11 @@
-usuario = ARGV[0].to_s
+usuario = ARGV[0]
 
 if usuario !="piedra" && usuario !="tijera" && usuario !="papel"
     puts "Argumento invalido: Debe ser piedra, papel o tijera."
 else
 
 # numeros aleatoriosS
-computador = rand(3)
+computador = rand(0..2)
 
     if computador == 0 
     computador="piedra"
